@@ -54,4 +54,7 @@ Este é um projeto feito apenas para estudo de com objetivo de aprimoramento.
 Aproveite os exercícios e feliz codificação!
 
 ##
-**Alan Denisson**
+**Alan Denisson | Dev Front-Ent**
+
+#### Imagem Ilustrtiva
+![imagem ilustrativa](https://github.com/alandenisson/100-exercicios-html-css/assets/154476905/f1617048-1bbe-4937-a700-f9adc3b25ca5)
