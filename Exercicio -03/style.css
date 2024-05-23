@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+.menu{
+    position: fixed;
+    margin: auto;
+    width: 100%;  
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    background: linear-gradient(rgba(2,1,13,0.525), rgba(2,1,13,0.848));
+}
+
+ul li {
+    display: inline-block;
+    font-size:15px;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+}
+
+a:hover{ 
+    color: rgb(255, 128, 0);
+    font-weight: 500;
+}
+
+.banner1{
+    flex-direction: column;
+    width: 100%;
+    max-height: 150%;
+    background-position: center;        
+    margin-top: 0;
+    overflow: hidden;
+    padding-top: 0px;
+}
+
+.banner2 {
+    padding-top: 0px;
+    width: 100%;
+    height: 100rem;
+    max-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.banner3 {
+    width: 100%;
+    height: 100rem;
+    max-height: 150%;
+    overflow: hidden;
+}
+
+.banner4 {
+    padding-top: 0px;
+    width: 100%;
+    height: 100rem;
+    max-height: 150%;
+    overflow: hidden;
+}
+
+.banner5 {
+    padding-top: 0px;
+    width: 100%;
+    height: 100rem;
+    max-height: 150%;
+    overflow: hidden;
+}
+
+.banner6 {
+    padding-top: 0px;
+    width: 100%;
+    height: 100rem;
+    max-height: 150%;
+    overflow: hidden;
+}
+
+.banner7 {
+    padding-top: 0px;
+    width: 100%;
+    height: 100rem;
+    max-height: 150%;
+    overflow: hidden;
+}
+
+.banner8 {
+    padding-top: 0px;
+    width: 100%;
+    height: 100rem;
+    max-height: 150%;
+    overflow: hidden;
+}
+
+.banner9 {
+    padding-top: 0px;
+    width: 100%;
+    height: 100rem;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.banner10 {
+    padding-top: 0px;
+    width: 100%;
+    height: 100rem;
+    max-height: 150%;
+    overflow: hidden;
+}
+
+.container{
+    display: inline-block;
+    max-width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section{ 
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    color: white;          
+}
+
