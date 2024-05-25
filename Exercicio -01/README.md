@@ -49,7 +49,7 @@ e técnicas para personalizar o efeito de acordo com suas preferências e necess
 
 ## Observação
 
-Este é um projeto feito apenas para estudo de com objetivo de aprimoramento.
+Este é um projeto feito apenas para estudo de com objetivo de aprimoramento!
 
 Aproveite os exercícios e feliz codificação!
 
