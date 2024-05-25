@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin-top: 50px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;    
+    background-image: linear-gradient(45deg, #efeaea, #ffffff);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 30px;
+    grid-gap: 30px;
+}
+
+.container{
+    position: relative;
+    width: 250px;
+    height: 380px; 
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    justify-items: center;
+   
+}
+
+.container:hover .flip{
+    transform: rotateY(180deg);
+}
+
+.flip{   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: .8s;
+}
+
+.frente1,.tras{   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #0000001b;
+    backface-visibility: hidden;   
+}
+
+.frente1{
+    background-image: url(/src/img/01.jpg);
+    background-size: cover;
+}
+
+.frente2,.tras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #0000001b;
+    backface-visibility: hidden;
+}
+
+.frente2 {
+    background-image: url(/src/img/02.jpg);
+    background-size: cover;
+}
+
+.frente3,.tras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #0000001b;
+    backface-visibility: hidden;
+}
+
+.frente3 {
+    background-image: url(/src/img/03.jpg);
+    background-size: cover;
+}
+
+.frente4,.tras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #0000001b;
+    backface-visibility: hidden;
+}
+
+.frente4 {
+    background-image: url(/src/img/04.jpg);
+    background-size: cover;
+}
+
+.tras{
+    background-color: rgb(5, 171, 121);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+
+
+        
+   
+    
+
+
+
+
+
