@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'titillium web', sans-serif;
+}
+
+.container{
+    max-width: 1080px;
+    display: flex;
+    margin: 0 auto;    
+    align-items: center;
+    justify-content: center;    
+}
+
+
+.container1{
+    padding: 50px;
+    width: 100%;
+    height: 50vh;
+    padding-top: 100px;
+}
+
+.container1 p{
+    font-size: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+    height: 500vh;
+}
+
+header{
+    background-color: #053a44;
+    width: 100%;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+}
+
+.logo,.social{
+    width: 25%;
+    color: #fff;
+}
+
+.logo{
+    font-size: 15px;
+    color: #45bfb3;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1);
+    color: aquamarine;
+}
+
+.menu{
+    width: 50%;
+    
+}
+
+.menu nav a{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, aquamarine, aquamarine);
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+    width: 50px;    
+}
+
+.menu nav a:hover{
+    color: aquamarine;
+}
+
+
+.social button{
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(45deg, #053a44, #45bfb3) ;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.social button i{
+    font-size: 15px;
+        color: #053a44;
+    text-align: center;
+}
+
+.social button:hover{
+    transform: scale(0.9);
+    background: rgb(84, 233, 184);
+
+}
+
+.social button i:hover {
+    color: #053a44;
+}
+
+
+/* Estelização do Menu */
+
+
+.menu-mobile{
+    background-color: #0000008e;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#btn-menu{
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #fff;
+    height: 40px;
+    width: 40px;
+    background-color: #053a44;
+    transition: .2s;
+    display: none;
+}
+
+.linha{
+    position: relative;
+    height: 3px;
+    background: #fff;
+    width: 25px;
+    display: block;
+    margin: 5px auto;
+    transform-origin: center;
+    transition: .2s;
+}
+
+#btn-menu.ativo{
+    border: 2px solid #29a89b;
+}
+
+#btn-menu.ativo .linha:nth-child(1){
+    transform: translateY(8px) rotate(-45deg);
+    background-color: #45bfb3;
+}
+
+#btn-menu.ativo .linha:nth-child(3) {
+    transform: translateY(-8px) rotate(45deg);
+    background-color: #45bfb3;
+}
+
+#btn-menu.ativo .linha:nth-child(2){
+    width: 0;
+}
+
+.menu-mobile nav a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    font-size: 15pt;
+}
+
+.menu-mobile nav a:hover{
+    background-color: #053a44c0;
+}
+
+@media screen and (max-width:1030px){
+    .menu,.social{
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .menu-mobile.abrir{
+        visibility: visible;
+        height: calc(100vh - 56px);
+    }
+
+    #btn-menu{
+        display: block;
+    }
+}
