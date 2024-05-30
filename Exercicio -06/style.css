@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(2, 1, 13, 0.925), rgba(2, 1, 13, 0.848)), 
+    url('img/backgroud1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    width: 100%;
+    padding: 0 6%;
+    background: linear-gradient(rgba(2, 1, 13, 0.729), rgba(2, 1, 13, 0.848));
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 55px;    
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 40px;
+    list-style: none;    
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    top: 120%;
+    left: 0;
+    background: rgb(100, 168, 237); 
+    transition: 0.5s;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    top: 120%;
+    right: 0;
+    background: rgb(100, 168, 237);
+    transition: 0.5s;
+}
+
+li:hover a::before{
+    width: 50%;
+    transform: translate(100%);
+}
+
+li:hover a::after {
+    width: 50%;
+    transform: translate(-100%);
+}
+
+nav ul li button{
+    padding: 12px 25px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    background: rgb(1, 36, 73);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    border: 2px solid;
+    box-shadow: 1px 1px 18px rgb(182, 186, 190);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li button:hover{
+    background-color: rgb(100, 168, 237);
+    color: black;
+    border: rgb(100, 168, 237);
+}
+
+.wrapper{
+    margin: 0 6%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.content{
+    margin-left: 30px;
+    margin-top: 7px;
+}
+
+.content h1 {
+    color: white;
+    font-size: 70px;
+    line-height: 65px;
+    font-weight: 700;
+}
+
+.content p{
+    color: rgb(182, 186, 190);
+    font-size: 23px;
+}
+
+.content form{     
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.content form input{   
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.wrapper .form-box{
+    margin-top: 50px;
+    margin-left: 300px;    
+    width: 400px;
+    height: 470px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 10px 30px rgb(100, 168, 237);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-box form h2{
+    color: rgb(100, 168, 237);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-box form .inputBox{
+    width: 300px;
+    margin-top: 55px;
+    position: relative;    
+}
+
+.inputBox input{
+    width: 100%;
+    padding: 0 20px 0 5px;
+    font-size: 17px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid  rgb(100, 168, 237);
+}
+
+.inputBox label{
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    left: 5px;
+    top: -5px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label{
+    transform: translate(-5px, -25px);
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(100, 168, 237);
+}
+
+.form-box .forgot{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;   
+}
+
+.form-box .forgot a{
+    color: white;
+    text-decoration: none;
+}
+
+.form-box .forgot a:hover{
+    color: rgb(100, 168, 237);
+}
+
+.form-box .login-btn{
+    width: 100%;
+    margin-top: 35px;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background: rgb(100, 168, 237);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.form-box .login-btn:hover{
+    background: rgb(1, 36, 73);
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.form-box .register{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-box .register a{
+    color: rgb(182, 186, 190);
+    font-size: 17px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.form-box .register a:hover{
+    text-decoration: none;
+    color: rgb(100, 168, 237);
+}
+
+.form-box .icons{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-box .icons p{
+    color: #fff;
+}
+
+.form-box .icons .social-inks{  
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-box .icons .social-inks a{
+    color: #fff;
+    font-size: 27px;
+    transition: 0.4s;
+}
+
+.form-box .icons .social-inks a:hover{
+    color: rgb(100, 168, 237);
+}
+
