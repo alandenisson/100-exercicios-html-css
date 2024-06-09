@@ -1,0 +1,91 @@
+
+body{
+    background: #fff;
+}
+
+.pricing-area{
+    padding: 3% 0;
+    text-align: center;
+}
+
+.single-pricing{
+    background: #fcfcfc;
+    box-shadow: rgba(21, 133, 103, 0.349) 0 48px 100px 0;
+    transition: all .5s ease;
+}
+
+.deal-type{
+    background: linear-gradient(to bottom, #026c49, #08d590);
+    padding: 15px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.deal-amount{
+    clip-path: polygon(0 0, 100% 0%, 100% 52%, 50% 100%, 0% 50%);
+    background: linear-gradient(to right, #026c49, #08d590);
+    padding: 25px 0;
+    color: #fff;
+}
+
+.price .money{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.price .money sup{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.single-deal{
+    padding: 15px 0;
+    list-style: none;
+}
+
+.single-deal li{
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.btn{
+    background: linear-gradient(to right, #026c49, #08d590);
+    border: none;
+    margin-bottom: 30px;
+    padding: 10px 50px;  
+}
+
+.btn:hover{
+    background: #0b0200;
+    color: #fcfcfc;
+}
+
+.single-pricing a{
+    color: #fcfcfc;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.single-pricing a:hover{
+    color: #fcfcfc;
+}
+
+
+.single-pricing:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width:990px) {
+    .single-pricing {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:767px) {
+    .single-pricing{
+        margin-bottom: 30px;
+    }
+}
