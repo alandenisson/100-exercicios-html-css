@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 14px;
+    height: 140vh;
+}
+
+body{
+    margin-top: 40px;
+    background-image: linear-gradient(rgba(15, 1, 1, 0.779), rgba(13, 1, 1, 0.832)), url(img/03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100vw;
+    height: 100vh;
+}
+
+ .container{
+    width: 450px;
+    border-radius: 5% ;
+    background: rgba(13, 1, 1, 0.654);
+    border: 1px solid rgb(247, 52, 52);
+    box-shadow: 0px 0px 40px 0 rgb(247, 52, 52);
+    padding: 5px 3px;
+    flex-direction: column;
+    position: relative;
+    height: 670px;
+    margin-top: 80px;
+ }
+
+.box{
+    position: absolute;
+    height: 420px;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.degrade {
+    background: linear-gradient(to right, #B11313, #2B3784);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    margin-top: 50vh;
+    max-width: 130px;
+    margin-bottom: 2px;
+    border-radius: 50%;
+    border: 5px solid rgb(247, 52, 52);
+    box-shadow: 0px 0px 40px 0 rgb(247, 52, 52);
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #f44c4c;
+    font-weight: 300;
+}
+
+section.botoes-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a.link button {
+    width: 100%;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s;
+}
+
+a.link i {
+    font-size: 1.5em;
+}
+
+a.link button:hover,
+footer a.btn-footer:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+}
+
+footer a.btn-footer {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: .2s;
+}
